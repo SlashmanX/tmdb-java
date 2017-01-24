@@ -29,7 +29,7 @@ public interface MoviesService {
      */
     @GET("movie/{id}")
     Call<Movie> summary(
-            @Path("id") int tmdbId,
+            @Path("id") String tmdbId,
             @Query("language") String language,
             @Query("append_to_response") AppendToResponse appendToResponse
     );
